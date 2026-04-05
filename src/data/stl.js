@@ -38,6 +38,7 @@ export const BARS = [
 
   // ── Live Music ──
   { name: "Tin Roof",             address: "1000 Clark Ave",          cat: "Live Music",   price: 10, x:  0.6, y: -1.9 },
+  { name: "Broadway Oyster Bar",  address: "736 S Broadway",          cat: "Live Music",   price: 9,  x: -1.0, y:  3.2 },
 
   // ── Brewery ──
   { name: "4 Hands Brewing",      address: "1220 S 8th St",           cat: "Brewery",      price: 9,  x:  1.3, y:  2.6 },
@@ -71,6 +72,7 @@ export const BARS = [
   // ── Italian ──
   { name: "Acero",                address: "7266 Manchester Rd",      cat: "Italian",      price: 14, x:  4.4, y:  4.6 },
   { name: "Roberto's Trattoria",  address: "145 Concord Plaza",       cat: "Italian",      price: 13, x:  4.2, y:  4.3 },
+  { name: "Pan D'Olive",          address: "1603 McCausland Ave",     cat: "Italian",      price: 12, x:  3.8, y:  4.0 },
 
   // ── Fine Dining ──
   { name: "Sidney Street Café",   address: "2000 Sidney St",          cat: "Fine Dining",  price: 14, x:  4.0, y:  4.4 },
