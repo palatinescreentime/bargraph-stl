@@ -109,11 +109,17 @@ export default function BarGraph({ city, bars: ALL_BARS, categories: CATEGORIES 
         .fade-up    { animation: fadeUp 0.45s ease both; }
         .filter-row {
           display: flex; align-items: center; gap: 6px;
-          overflow-x: auto; padding-bottom: 4px;
-          -webkit-overflow-scrolling: touch;
-          scrollbar-width: none;
+          flex-wrap: wrap; padding-bottom: 4px;
         }
-        .filter-row::-webkit-scrollbar { display: none; }
+        @media (max-width: 640px) {
+          .filter-row {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+          }
+          .filter-row::-webkit-scrollbar { display: none; }
+        }
         .filter-btn {
           border-radius: 20px; padding: 5px 12px; font-size: 11px;
           font-family: inherit; cursor: pointer; transition: all 0.15s ease;
